@@ -1,0 +1,44 @@
+<Html>
+<Body>
+<CANVAS ID="myCanvas" width="300" height="300" style="border:1px solid black">
+</CANVAS>
+<SCRIPT>
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+ctx.beginPath();
+ctx.moveTo(40,40);
+ctx.lineTo(240,40);
+
+ctx.moveTo(40,40);
+ctx.lineTo(40,160);
+
+ctx.moveTo(80,40);
+ctx.lineTo(80,160);
+
+ctx.moveTo(130,40);
+ctx.lineTo(130,160);
+
+ctx.moveTo(180,40);
+ctx.lineTo(180,160);
+
+ctx.moveTo(240,40);
+ctx.lineTo(240,160);
+
+ctx.moveTo(40,80);
+ctx.lineTo(240,80);
+
+ctx.moveTo(40,120);
+ctx.lineTo(240,120);
+
+ctx.moveTo(40,160);
+ctx.lineTo(240,160);
+
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(101,100,12,Math.PI*2,false);
+ctx.closePath();
+ctx.fillStyle="green";
+ctx.fill();
+</SCRIPT>
+</Body>
+</Html>

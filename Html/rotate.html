@@ -1,0 +1,52 @@
+<Html>
+<Head>
+<Title>Rotating Ball </Title>
+</Head>
+<BODY>
+<DIV>
+<CANVAS ID="canvas" width="400" height="300" style="border:2px solid black">
+</CANVAS>
+</DIV>
+
+<SCRIPT type="text/javascript">
+var canvas;
+var ctx;
+var x=400;
+var y=300;
+var dx=2;
+var dy=4;
+var WIDTH=400;
+var HEIGHT=300;
+
+function circle(){
+  ctx.beginPath();
+ctx.fillStyle="red";
+  ctx.arc(x,y,10,0,Math.PI*2,true);
+  ctx.fill();
+ctx.closePath();
+}
+
+function clear(){
+  ctx.clearRect(0,0,WIDTH,HEIGHT);
+}
+
+function init(){
+  canvas=document.getElementById("canvas");
+  ctx=canvas.getContext("2d");
+  return setInterval(draw,10);
+}
+
+function draw(){
+  clear();
+circle();
+  if(x>WIDTH||x<0)
+    dx=-dx;
+  if(y>HEIGHT||y<0)
+    dy=-dy;
+    x+=dx;
+    y+=dy;
+}
+init();
+</SCRIPT>
+</BODY>
+</Html>

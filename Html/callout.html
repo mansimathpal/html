@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif; font-weight: bold;}
+
+.callout {
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+}
+
+.callout-header {
+  padding: 25px 15px;
+  background: #555;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.callout-container {
+  padding: 15px;
+  background-color: #ccc;
+  color: black
+}
+
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: lightgrey;
+}
+</style>
+</head>
+<body>
+
+<h1 style="text-align: center; color: darkcyan; font-size: 50px;">Callout Messages</h1>
+
+<p style="color: darkmagenta; font-size: 30px;">Click on the "x" symbol to close the callout message.</p>
+<div class="callout">
+  <div class="callout-header">Java Update Available</div>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+  <div class="callout-container">
+    <p style="font-size: 20px;">A new version of Java is ready to be installed . 
+        <br>
+    Click here to continue
+        <br>
+    9/10
+        <a href="#">Learn more</a> or close it if it is in your way.</p>
+  </div>
+</div>
+
+</body>
+</html>

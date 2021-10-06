@@ -1,0 +1,23 @@
+<Html>
+<Head>
+  <Style>
+   a:link{color:red;}
+   a.visited{color:green;}
+   a:active{color:blue;}
+  </Style>
+</Head>
+<SCRIPT type="text/javascript">
+function count()
+{
+var x=document.getElementsByName("link");
+alert(x.length +"Hyperlinks");
+}
+</SCRIPT>
+<BODY>
+<A href="# first">Hyperlink text </A><BR/>
+<A href="# second">Hyperlink text </A><BR/>
+<A href="# third">Hyperlink text </A><BR/>
+<BR/>
+<INPUT type="button" value="Count" onclick="count()"/>
+<BODY>
+<Html>

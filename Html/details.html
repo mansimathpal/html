@@ -1,0 +1,135 @@
+<HTML>
+<Body>
+<h1><b><center><u><p style="color:brown;">Enter Login Details </p></b></h1></u>
+<STYLE>
+body{
+background-color:pink;
+color:darkblue;
+}
+</STYLE>
+
+<Form>
+<b><p style="font-size:15pt;">Username: </p></b><Input type="text" name="uname" size="20" maxlength="30">
+<br>
+<br>
+
+<b><p style="font-size:15pt;">Password: </p><b><Input type="password" name="pword" size="20" maxlength="30">
+<br>
+<br>
+
+<b>Gender:<Input type="radio" name="male">male </b>
+<b><Input type="radio" name="female">female </b>
+<br>
+<br>
+
+<b>Hobbies:<Input type="checkbox" name="c1" value="shopping">shopping </b>
+<b><Input type="checkbox" name="c2" value="listening songs">listening songs </b>
+<b><Input type="checkbox" name="c3" value="true friends">true friends </b>
+<br>
+<br>
+
+
+
+<Label><b><p style="font-size:15pt;">Enter url: </p></b></Label>
+<Input type="url" name="locator">
+<br>
+<br>
+
+<Label><b><p style="font-size:15pt;">Email: </p></b></Label>
+<Input type="email" name="email_id" multiple>
+<br>
+<br>
+
+<Label><b><p style="font-size:15pt;">Range: </p></b></Label>
+<Input type="range" max="50" min="10" step="5" value="10">
+<br>
+<br>
+
+<Label><b><p style="font-size:15pt;">Date: </p></b></Label>
+<Input type="date" name="bday">
+<br>
+<br>
+
+<Label><b><p style="font-size:15pt;">Time: </p></b></Label>
+<Input type="time" name="usr_time">
+<br>
+<br>
+
+<Label><b><p style="font-size:15pt;">Number: </p></b></Label>
+<Input type="number" name="quantity" min="0" max="50">
+<br>
+<br>
+
+<Label><b><p style="font-size:15pt">Tel: </p></b></Label>
+<Input type="tel" name="usrtel">
+<br>
+<br>
+
+<Label><b><p style="font-size:15pt">Image: </p></b></Label>
+<Input type="image" src="tulips.jpg" alt="submit" width="100" height="100"/>
+<br>
+<br>
+
+<Label><b><p style="font-size:15pt;">Pattern: </p></b></Label>
+<Input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter code">
+<br>
+<br>
+
+
+<TR>
+<TD><b><p style="font-size:15pt;">Dishes: </p></TD></b>
+<TD><SELECT>
+<OPTION value="opt13">Select the Dishes of your choice </OPTION>
+<OPTGROUP label="Italian">
+<OPTION value="opt14">Pasta </OPTION>
+<OPTION value="opt15">Fish </OPTION>
+<OPTION value="opt16">Rice </OPTION>
+</OPTGROUP>
+<OPTGROUP label="Chinese">
+<OPTION value="opt17">Chowmein </OPTION>
+<OPTION value="opt18">Manchurian </OPTION>
+<OPTION value="opt19">Water chessnut cake </OPTION>
+</OPTGROUP>
+</SELECT></TD>
+<br>
+<br>
+
+<TD><b><p style="font-size:15pt;">Select Restaurant: </p></TD></b>
+&nbsp;&nbsp;
+<SELECT>
+    <OPTION value="opt1">Select your Restaurants </OPTION>
+    <OPTION value="opt2">La Figa </OPTION>
+    <OPTION value="opt3">Benihana </OPTION>
+    <OPTION value="opt4">Gallipoli </OPTION>
+    <OPTION value="opt5">Sagar Ratna </OPTION>
+</SELECT>
+<br>
+<br>
+
+<Label for="orderfor"><b><p style="font-size:15pt;">Address: </p></b</Label>
+<TEXTAREA rows="3" cols="16" ID="orderfor">
+Enter your Address here
+</TEXTAREA>
+<br>
+<br>
+
+<Label for="state"><b><p style="font-size:15pt;">State: </p><b></Label>
+<Input list="stat" name="stat" ID="state">
+<DATALIST ID="stat">
+  <OPTION value="Alabama">
+  <OPTION value="California">
+  <OPTION value="Delaware">
+  <OPTION value="Florida">
+  <OPTION value="Hawaii">
+  </DATALIST>
+
+<br>
+<br>
+<Input type="submit" name="submit1" value="submit">
+&nbsp;&nbsp;
+<Input type="reset" name="reset1" value="reset">
+  <br>
+  <br>
+
+</Form>
+</HTML>

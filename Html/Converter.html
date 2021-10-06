@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h2>JavaScript celcius to fahrenhet</h2>
+        <p>Insert a number into one of the input fields below:</p>
+        <p><input id="c" onkeyup="convert('C')"> degrees celsius</p>
+        <p><input id="f" onkeyup="convert('F')"> degrees fahrenheit</p>
+
+        <SCRIPT>
+            function convert(degree) {
+                var x;
+                if (degree =="C") {
+                    x = document.getElementById("c").value *9 / 5 + 32;
+                    document.getElementById("f").value = Math.round(x);
+                    
+                }
+                else{
+                    x = (document.getElementById("f").value -32) * 5 / 9;
+                    document.getElementById("c").value = Math.round(x);
+                }
+            }
+        </SCRIPT>
+    </body>
+</html>

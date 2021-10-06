@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif; font-size: 25px; font-weight: bold;}
+
+.sidebar {
+  height: 100%;
+  width: 170px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+  font-weight: bold;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px;
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="#services"><i class="fa fa-fw fa-wrench"></i> Services</a>
+  <a href="#clients"><i class="fa fa-fw fa-user"></i> Clients</a>
+  <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+</div>
+
+<div class="main">
+  <h1 style="font-size: 50px; font-weight: bold; color: steelblue; text-align: center;">Sidebar with Icons</h1>
+  <p style="font-size: 25px; color: darkorange;">This side navigation is of full height (100%) and always shown.</p>
+  <p>The National Institute of Information Technology is a skills and talent development 
+    corporation building a manpower pool for global industry requirements. The company was 
+    set up in 1981 to help the nascent IT industry overcome its human resource challenges.</p>
+  <p>In 1986, NIIT began its foray into the software domain, beginning with Software Product 
+    Distribution under the 'Insoft' brand. The company also began offering advice and 
+    consultancy to large corporations on how to leverage technology and make optimum use of 
+    their IT investments.</p>
+</div>
+     
+</body>
+</html> 

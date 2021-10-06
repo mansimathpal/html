@@ -1,0 +1,22 @@
+<Html>
+<body>
+<P ID="button">Click here to know your location coordinates: </P>
+<BUTTON onclick="getLocation()">Get Location </BUTTON>
+<SCRIPT>
+var geo=document.getElementById("button");
+function getLocation()
+ {
+ if(navigator.geolocation)
+  {
+  navigator.geolocation.watchPosition(getPosition);
+  }
+ else{geo.innerHTML="GeoLocation is not supported by this browser.";}
+ }
+function getPosition(position)
+ {
+  geo.innerHTML="Latitude: " +position.coords.latitude +
+  "<br>Longitude: " +position.coords.longitude;
+ }
+</SCRIPT>
+</body>
+</Html>

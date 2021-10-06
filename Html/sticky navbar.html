@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: yellow;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: red;
+}
+
+#navbar a.active {
+  background-color: #04AA6D;
+  color: yellow;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="color: chocolate;">Scroll Down</h1>
+</div>
+
+<div id="navbar">
+  <a class="active" href="javascript:void(0)">Home</a>
+  <a href="javascript:void(0)">About</a>
+  <a href="javascript:void(0)">Contact</a>
+</div>
+
+<div class="content">
+  <h2 style="color: crimson;">Sticky Navigation Example</h2>
+  <p style="color: rgb(21, 42, 230);">The navbar will stick to the top when you reach its scroll position.</p>
+  <p>The National Institute of Information Technology is a skills and talent development corporation building a manpower pool for 
+      global industry requirements.</p>
+  <p> The company was set up in 1981 to help the nascent IT industry overcome its human resource challenges.</p>
+  <p>In 1986, NIIT began its foray into the software domain, beginning with Software Product Distribution under the 'Insoft' brand. </p>
+  <p> The company also began offering advice and consultancy to large corporations on how to leverage technology and make optimum 
+      use of their IT investments.</p>
+  <p>In 1988, NIIT introduced many marketing and advertising strategies for the Indian market including the 'Computerdrome' in 1990. </p>
+  <p>Another initiative launched by NIIT, was its Bhavishya Jyoti Scholarships program, launched in 1991, which was targeted at 
+    deserving and socially challenged students with an aim to improve their skills and employability quotient.</p>
+  <p>NIIT was established in 1981 by Rajendra S. Pawar and Vijay K. Thadani, graduates from IIT Delhi, with one million rupees. NIIT 
+      conceived a franchising model in IT education for the very first time, setting up nine centers by 1987.</p>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
